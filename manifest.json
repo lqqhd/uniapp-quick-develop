@@ -1,0 +1,290 @@
+{
+    "name" : "工程找活儿",
+    "appid" : "__UNI__5ABE238",
+    // 自行更换uniapp appid 可登录查看uniapp提供的用户统计 https://tongji.dcloud.net.cn/
+    "description" : "工程机械产业链平台",
+    "versionName" : "1.0.1",
+    "versionCode" : 101,
+    "transformPx" : false,
+    "app-plus" : {
+        "compatible" : {
+            "ignoreVersion" : true
+        },
+        "ios" : {
+            "UIUserInterfaceStyle" : "Automatic"
+        },
+        /* 5+App特有相关 */
+        "usingComponents" : true,
+        "safearea" : {
+            "bottom" : {
+                "offset" : "auto"
+            }
+        },
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {
+            "Payment" : {},
+            "VideoPlayer" : {},
+            "Share" : {},
+            "OAuth" : {},
+            "Push" : {},
+            "Maps" : {}
+        },
+        /* 模块配置 */
+        "distribute" : {
+            /* 应用发布信息 */
+            "android" : {
+                /* android打包配置 */
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SMS\"/>"
+                ]
+            },
+            "ios" : {
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "商品评价",
+                    "NSPhotoLibraryAddUsageDescription" : "商品评价",
+                    "NSCameraUsageDescription" : "核销虚拟商品",
+                    "NSMicrophoneUsageDescription" : ""
+                }
+            },
+            /* ios打包配置 */
+            "sdkConfigs" : {
+                "ad" : {},
+                "payment" : {
+                    "alipay" : {
+                        "__platform__" : [ "ios", "android" ]
+                    },
+                    "appleiap" : {},
+                    "weixin" : {
+                        "__platform__" : [ "ios", "android" ],
+                        "appid" : "wxad0ddab9fc765a6c",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "push" : {},
+                "share" : {
+                    "weixin" : {
+                        "appid" : "wxad0ddab9fc765a6c",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "oauth" : {
+                    "apple" : {},
+                    "weixin" : {
+                        "appid" : "wxad0ddab9fc765a6c",
+                        "appsecret" : "8419ec86878a24326d8b588d9086cd8c",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "geolocation" : {
+                    "amap" : {
+                        "__platform__" : [ "ios", "android" ],
+                        "appkey_ios" : "",
+                        "appkey_android" : ""
+                    }
+                },
+                "maps" : {
+                    "amap" : {
+                        "appkey_ios" : "c23eed4f07b163371dfa68865928114c",
+                        "appkey_android" : "aa178dee626f28a676942dc0aaa70b46"
+                    }
+                }
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "android" : {
+                    "hdpi" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/android-480-762.png",
+                    "xhdpi" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/android-720-1242.png",
+                    "xxhdpi" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/android-1080-1882.png"
+                },
+                "ios" : {
+                    "iphone" : {
+                        "portrait-896h@3x" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/iso-full-splash.png",
+                        "landscape-896h@3x" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/iso-full-splash.png",
+                        "portrait-896h@2x" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/iso-full-splash.png",
+                        "landscape-896h@2x" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/iso-full-splash.png",
+                        "iphonex" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/iso-full-splash.png",
+                        "iphonexl" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/iso-full-splash.png",
+                        "retina55" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ios-splash.png",
+                        "retina55l" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ios-splash.png",
+                        "retina47" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ios-splash.png",
+                        "retina47l" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ios-splash.png",
+                        "retina40l" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ios-splash.png",
+                        "retina40" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ios-splash.png",
+                        "retina35" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ios-splash.png"
+                    },
+                    "ipad" : {
+                        "portrait-1366h@2x" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ipad.png",
+                        "landscape-1366h@2x" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ipad.png",
+                        "portrait-1194h@2" : "/Users/stav/Downloads/开屏图/ipad.png",
+                        "landscape-1194h@2x" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ipad.png",
+                        "portrait-1112h@2x" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ipad.png",
+                        "landscape-1112h@2x" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ipad.png",
+                        "portrait-retina7" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ipad.png",
+                        "landscape-retina7" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ipad.png",
+                        "portrait7" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ipad.png",
+                        "landscape7" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ipad.png",
+                        "portrait-1194h@2x" : "D:/git-projects/jixiebang/ruoyi-uniApp/docs/images/ipad.png"
+                    }
+                }
+            }
+        },
+        "uniStatistics" : {
+            "enable" : true
+        }
+    },
+    "uni-app" : {
+        "scripts" : {
+            "h5-weixin" : {
+                "title" : "微信服务号",
+                "BROWSER" : "Chrome",
+                "env" : {
+                    "UNI_PLATFORM" : "h5"
+                },
+                "define" : {
+                    "H5-WEIXIN" : true
+                }
+            }
+        }
+    },
+    /* SDK配置 */
+    "quickapp" : {},
+    /* 快应用特有相关 */
+    "mp-weixin" : {
+        /* 小程序特有相关 */
+        "usingComponents" : true,
+        "appid" : "wxe17f56a61cf22cc8",
+        // 这里添加微信小程序appid
+        "setting" : {
+            "urlCheck" : true,
+            "minified" : true,
+            "postcss" : true,
+            "es6" : true
+        },
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "访问当前地址"
+            }
+        },
+        "plugins" : {},
+        "uniStatistics" : {
+            "enable" : true
+        }
+    },
+    "h5" : {
+        "router" : {
+            "mode" : "history"
+        },
+        // history模式地址不带#
+        "async" : {
+            //页面js异步加载配置
+            "loading" : "AsyncLoading",
+            //页面js加载时使用的组件（需注册为全局组件）
+            "error" : "AsyncError",
+            //页面js加载失败时使用的组件（需注册为全局组件）
+            "delay" : 200,
+            //展示 loading 加载组件的延时时间（页面 js 若在 delay 时间内加载完成，则不会显示 loading 组件）
+            "timeout" : 10000
+        },
+        "uniStatistics" : {
+            "enable" : true
+        },
+        "title" : "工程找活儿",
+        "sdkConfigs" : {
+            "maps" : {
+                "qqmap" : {
+                    "key" : "SASBZ-QMALS-NUKOI-6W6SQ-SCLBE-CVFSC"
+                }
+            }
+        },
+        "domain" : "h5.jxbcn.com"
+    },
+    //页面js加载超时时间（超时后展示 error 对应的组件）
+    "mp-qq" : {
+        "setting" : {
+            "minified" : true
+        },
+        "appid" : "",
+        // 这里添加QQ小程序 appid
+        "uniStatistics" : {
+            "enable" : true
+        }
+    },
+    "uniStatistics" : {
+        "enable" : true
+    },
+    "mp-alipay" : {
+        "uniStatistics" : {
+            "enable" : true
+        }
+    },
+    "mp-baidu" : {
+        "uniStatistics" : {
+            "enable" : true
+        }
+    },
+    "mp-toutiao" : {
+        "uniStatistics" : {
+            "enable" : true
+        }
+    }
+}
